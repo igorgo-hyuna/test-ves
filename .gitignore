@@ -1,0 +1,12 @@
+._*
+/nbproject/
+/*/logs/
+/*/cgi-bin/
+._.DS_Store
+.DS_Store
+.idea/
+bower_components/
+node_modules/
+.sass-cache/
+package-lock.json
+.netbeans.xml
