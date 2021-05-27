@@ -3,6 +3,7 @@ $(document).ready(function() {
     $(".toggle_mnu").click(function() {
         $(".sandwich").toggleClass("active");
     });
+
     /* Burger. Hover */
     $(".top_mnu ul a").click(function() {
         $(".top_mnu").fadeOut(600);
@@ -15,10 +16,18 @@ $(document).ready(function() {
         if ($(".top_mnu").is(":visible")) {
             $(".top_text").css("opacity", "1");
             $(".top_mnu").fadeOut(600);
+            $(".wrapper_mnu").fadeOut(600);
         } else {
             $(".top_text").css("opacity", ".1");
             $(".top_mnu").fadeIn(600);
+            $(".wrapper_mnu").fadeIn(600);
+            $(".wrapper_mnu").css("rigth", "0");
         };
+    });
+
+    /* Menu open close sub menu*/
+    $('.menu-item-has-children').click( function(){
+      $(this).toggleClass('active');
     });
 
 });
