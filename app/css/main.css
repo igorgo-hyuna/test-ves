@@ -4,7 +4,7 @@
 2.  General styles
 3.  Burger
 4.  Header
-5.  Form  
+5.  Slider   
 
 */
 /* 1.  Fonts including */
@@ -16,7 +16,8 @@ body {
   font-family: 'Roboto', sans-serif;
   min-width: 320px;
   max-width: 100%;
-  font-size: 16px; }
+  font-size: 16px;
+  height: 3000px; }
 
 section {
   padding: 120px 0px;
@@ -61,6 +62,11 @@ a {
     right: -300px; }
   to {
     right: 0; } }
+
+.btn {
+  background-color: #b32317;
+  font-size: 12px;
+  color: #fff; }
 
 /* 3.  Burger */
 /* Mobile navigation */
@@ -283,6 +289,20 @@ button:focus {
 /* 4.  Header */
 header {
   height: auto; }
+  @media (min-width: 992px) {
+    header.sticky .top-bar__wrapp {
+      display: none; }
+    header.sticky .sticky-wrapp {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 99;
+      background: #fff; }
+      header.sticky .sticky-wrapp .bottom-bar {
+        padding: 3px 0 7px 0; }
+      header.sticky .sticky-wrapp .nav-wrapp ul li a {
+        margin: 6px 0; } }
   header .top-bar__wrapp {
     border-bottom: solid 1px #b32317;
     display: none; }
@@ -336,7 +356,10 @@ header {
           outline-color: #b32317;
           font-size: 12px; }
   header .bottom-bar {
-    padding: 10px 0; }
+    padding: 10px 0;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
     @media (min-width: 992px) {
       header .bottom-bar {
         padding: 20px 0; } }
@@ -416,7 +439,7 @@ header {
               display: inline; } }
           @media (min-width: 1200px) {
             header .bottom-bar .bottom-bar__contacts a.bottom-bar__contacts-phone {
-              margin-left: 50px;
+              margin-left: 65px;
               font-size: 26px; } }
           header .bottom-bar .bottom-bar__contacts a.bottom-bar__contacts-phone svg {
             top: 7px; }
@@ -438,7 +461,10 @@ header {
   header .nav-wrapp {
     background-color: #b32317;
     position: relative;
-    display: none; }
+    display: none;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
     @media (min-width: 992px) {
       header .nav-wrapp {
         display: block; } }
@@ -453,7 +479,7 @@ header {
         table-layout: unset;
         position: absolute;
         left: 10px;
-        top: 24px;
+        top: 37px;
         right: auto;
         width: 323px;
         background-color: #9a0000;
@@ -471,7 +497,7 @@ header {
             white-space: normal;
             text-transform: none;
             font-weight: 300;
-            padding: 8px 10px;
+            padding: 0 10px;
             display: block;
             text-align: left;
             color: #3A4850;
@@ -504,7 +530,28 @@ header {
           padding: 0;
           margin: 8px 0;
           border-right: 1px solid #da3f47;
-          font-weight: bold; }
+          font-weight: bold;
+          -webkit-transition: .2s;
+          -o-transition: .2s;
+          transition: .2s; }
           @media (min-width: 1200px) {
             header .nav-wrapp ul li a {
               font-size: 14px; } }
+
+/* 5.  Slider */
+.slider {
+  overflow: hidden;
+  padding-top: 10px; }
+  .slider .owl-carousel .owl-item {
+    position: relative; }
+    .slider .owl-carousel .owl-item .owl-item-text {
+      position: absolute;
+      top: 40px;
+      left: 5px; }
+      .slider .owl-carousel .owl-item .owl-item-text h2 {
+        font-size: 16px;
+        color: #000;
+        font-weight: bold;
+        margin-bottom: 2px; }
+      .slider .owl-carousel .owl-item .owl-item-text .owl-item-btnWrap {
+        text-align: left; }
