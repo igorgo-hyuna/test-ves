@@ -4,7 +4,8 @@
 2.  General styles
 3.  Burger
 4.  Header
-5.  Slider   
+5.  Slider
+6.  Services
 
 */
 /* 1.  Fonts including */
@@ -20,26 +21,19 @@ body {
   height: 3000px; }
 
 section {
-  padding: 120px 0px;
+  padding: 90px 0px;
   text-align: center; }
   @media (min-width: 768px) {
     section {
-      padding: 90px 0px; } }
+      padding: 120px 0px; } }
 
 h2 {
-  font-size: 50px; }
-  @media (min-width: 1200px) {
-    h2 {
-      font-size: 42px;
-      line-height: 42px; } }
-  @media (min-width: 992px) {
-    h2 {
-      font-size: 27px;
-      line-height: 30px; } }
-  @media (min-width: 545px) {
-    h2 {
-      font-size: 20px;
-      line-height: 25px; } }
+  margin-bottom: 20px; }
+
+h2, h3 {
+  font-size: 22px;
+  color: #000;
+  font-weight: 400; }
 
 img {
   max-width: 100%; }
@@ -308,6 +302,8 @@ header {
       background: #fff; }
       header.sticky .sticky-wrapp .bottom-bar {
         padding: 3px 0 7px 0; }
+      header.sticky .sticky-wrapp .nav-wrapp ul li.menu-item-has-children:hover ul.sub-menu {
+        top: 32px; }
       header.sticky .sticky-wrapp .nav-wrapp ul li a {
         margin: 6px 0; } }
   header .top-bar__wrapp {
@@ -548,9 +544,16 @@ header {
 /* 5.  Slider */
 .slider {
   overflow: hidden;
-  padding-top: 10px; }
+  padding-top: 10px;
+  padding-bottom: 40px; }
   .slider .owl-carousel .owl-nav {
     display: none; }
+  @media (min-width: 992px) {
+    .slider .owl-carousel .owl-dots {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center; } }
   .slider .owl-carousel .owl-dots button {
     display: inline-block;
     margin: 0 7px;
@@ -626,3 +629,30 @@ header {
             .slider .owl-carousel .owl-item .owl-item-text .owl-item-btnWrap .btn {
               font-size: 14px;
               padding: 9px 25px; } }
+
+/* 6.  Services */
+.services {
+  padding-top: 0; }
+  .services h2 {
+    margin-bottom: 30px; }
+  .services .services__item {
+    margin-bottom: 40px; }
+    .services .services__item:hover .services__item-wrapp {
+      border-color: #b32317; }
+      .services .services__item:hover .services__item-wrapp:hover {
+        -webkit-box-shadow: 0px 0px 33px -20px rgba(0, 0, 0, 0.75);
+                box-shadow: 0px 0px 33px -20px rgba(0, 0, 0, 0.75); }
+    .services .services__item:hover h3 {
+      margin-top: -2px; }
+    .services .services__item .services__item-wrapp {
+      display: block;
+      margin: 0 15px 10px;
+      background-repeat: no-repeat;
+      height: 170px;
+      border: 1px solid #C0C0C0; }
+    .services .services__item h3 {
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s;
+      font-size: 14px;
+      text-transform: uppercase; }

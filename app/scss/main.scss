@@ -4,7 +4,8 @@
 2.  General styles
 3.  Burger
 4.  Header
-5.  Slider   
+5.  Slider
+6.  Services
 
 */
 
@@ -35,31 +36,22 @@ body {
 }
 
 section {
-    padding: $padding-standart;
+    padding: $padding-small;
     text-align: center;
 
     @media ($md) {
-        padding: $padding-small;
+        padding: $padding-standart;
     }
 }
 
 h2 {
-    font-size: 50px;
+    margin-bottom: 20px;
+}
 
-    @media ($xlg) {
-        font-size: 42px;
-        line-height: 42px;
-    }
-
-    @media ($lg) {
-        font-size: 27px;
-        line-height: 30px;
-    }
-
-    @media (min-width: 545px) {
-        font-size: 20px;
-        line-height: 25px;
-    }
+h2, h3 {
+   font-size: 22px;
+   color: $black;
+   font-weight: 400;
 }
 
 img {
@@ -409,6 +401,16 @@ header {
 
                         li {
 
+                            &.menu-item-has-children:hover {
+
+                                ul {
+
+                                    &.sub-menu {
+                                        top: 32px;
+                                    }
+                                }
+                            }
+
                             a {
 
                                 margin: 6px 0;
@@ -751,6 +753,7 @@ header {
 .slider {
     overflow: hidden;
     padding-top: 10px;
+    padding-bottom: 40px;
 
     .owl-carousel {
 
@@ -759,6 +762,13 @@ header {
         }
 
         .owl-dots {
+
+            @media ($lg) {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+            }
 
             button {
                 display: inline-block;
@@ -843,6 +853,56 @@ header {
                     }
                 }
             }
+        }
+    }
+}
+
+/* 6.  Services */
+.services {
+    padding-top: 0;
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    .services__item {
+        margin-bottom: 40px;
+
+        &:hover {
+
+            .services__item-wrapp {
+                border-color: $red;
+
+                &:hover {
+                    box-shadow: 0px 0px 33px -20px rgba(0, 0, 0, .75);
+                }
+            }
+
+            h3 {
+                margin-top: -2px;
+            }
+        } 
+
+        .services__item-wrapp {
+            display: block;
+            margin: 0 15px 10px;
+            background-repeat: no-repeat;
+            height: 170px;
+            border: 1px solid #C0C0C0;
+
+
+            picture {
+
+                source, img {
+
+                }
+            }
+        }
+
+        h3 {
+            transition: .2s;
+            font-size: 14px;
+            text-transform: uppercase;
         }
     }
 }
