@@ -22,6 +22,7 @@ $sm: 'min-width: 576px';
 $md: 'min-width: 768px';
 $lg: 'min-width: 992px';
 $xlg: 'min-width: 1200px';
+$xxlg: 'min-width: 1400px';
 
 body {
     color: #787878;
@@ -89,6 +90,15 @@ a {
     background-color: $red;
     font-size: 12px;
     color: $white;
+    transition: .2s;
+
+    &:hover {
+        background-color: #9a0000;
+    }
+
+    &:focus {
+        outline: 0;
+    }
 }
 
 /* 3.  Burger */
@@ -374,6 +384,7 @@ header {
     height: auto;
 
     @media ($lg) {
+
         &.sticky {
 
             .top-bar__wrapp {
@@ -743,13 +754,37 @@ header {
 
     .owl-carousel {
 
+        .owl-nav {
+            display: none;
+        }
+
+        .owl-dots {
+
+            button {
+                display: inline-block;
+                margin: 0 7px;
+                width: 25px;
+                height: 5px;
+                font-size: 0;
+                background-color: #eeeff1;
+
+                &.active {
+                    background-color: $red;
+                }
+
+                span {
+                    display: none;
+                }
+            }
+        }
+
         .owl-item {
             position: relative;
 
             picture {
 
                 source, img {
-
+                    max-width: 100%;
                 }
             }
 
@@ -758,15 +793,54 @@ header {
                 top: 40px;
                 left: 5px;
 
+                @media (min-width: 450px) {
+                    top: 55px;
+                }
+
+                @media ($sm) {
+                    top: 80px;
+                    left: 13px;
+                }
+
+                @media ($md) {
+                    top: 104px;
+                    left: 17px;
+                }
+
+                @media ($lg) {
+                    top: 135px;
+                    left: 20px;
+                }
+
+                @media ($xlg) {top: 185px;}
+
                 h2 {
-                    font-size: 16px;
+                    font-size: 17px;
                     color: #000;
                     font-weight: bold;
                     margin-bottom: 2px;
+
+                    @media ($sm) {margin-bottom: 7px;}
+                    @media (min-width: 450px) {font-size: 22px;}
+                    @media ($md) {font-size: 26px;}
+                    @media ($lg) {font-size: 38px; margin-bottom: 20px;}
+                    @media ($xlg) {margin-bottom: 25px;}
+                    @media ($xxlg) {font-size: 44px;}
                 }
 
                 .owl-item-btnWrap {
                     text-align: left;
+
+                    @media ($lg) {
+                        text-align: center;
+                    }
+
+                    .btn {
+                        padding: 4px 10px;
+
+                        @media ($sm) {padding: 7px 15px;}
+                        @media ($lg) {font-size: 14px; padding: 9px 25px;}
+                    }
                 }
             }
         }

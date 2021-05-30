@@ -66,7 +66,14 @@ a {
 .btn {
   background-color: #b32317;
   font-size: 12px;
-  color: #fff; }
+  color: #fff;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s; }
+  .btn:hover {
+    background-color: #9a0000; }
+  .btn:focus {
+    outline: 0; }
 
 /* 3.  Burger */
 /* Mobile navigation */
@@ -542,16 +549,80 @@ header {
 .slider {
   overflow: hidden;
   padding-top: 10px; }
+  .slider .owl-carousel .owl-nav {
+    display: none; }
+  .slider .owl-carousel .owl-dots button {
+    display: inline-block;
+    margin: 0 7px;
+    width: 25px;
+    height: 5px;
+    font-size: 0;
+    background-color: #eeeff1; }
+    .slider .owl-carousel .owl-dots button.active {
+      background-color: #b32317; }
+    .slider .owl-carousel .owl-dots button span {
+      display: none; }
   .slider .owl-carousel .owl-item {
     position: relative; }
+    .slider .owl-carousel .owl-item picture source, .slider .owl-carousel .owl-item picture img {
+      max-width: 100%; }
     .slider .owl-carousel .owl-item .owl-item-text {
       position: absolute;
       top: 40px;
       left: 5px; }
+      @media (min-width: 450px) {
+        .slider .owl-carousel .owl-item .owl-item-text {
+          top: 55px; } }
+      @media (min-width: 576px) {
+        .slider .owl-carousel .owl-item .owl-item-text {
+          top: 80px;
+          left: 13px; } }
+      @media (min-width: 768px) {
+        .slider .owl-carousel .owl-item .owl-item-text {
+          top: 104px;
+          left: 17px; } }
+      @media (min-width: 992px) {
+        .slider .owl-carousel .owl-item .owl-item-text {
+          top: 135px;
+          left: 20px; } }
+      @media (min-width: 1200px) {
+        .slider .owl-carousel .owl-item .owl-item-text {
+          top: 185px; } }
       .slider .owl-carousel .owl-item .owl-item-text h2 {
-        font-size: 16px;
+        font-size: 17px;
         color: #000;
         font-weight: bold;
         margin-bottom: 2px; }
+        @media (min-width: 576px) {
+          .slider .owl-carousel .owl-item .owl-item-text h2 {
+            margin-bottom: 7px; } }
+        @media (min-width: 450px) {
+          .slider .owl-carousel .owl-item .owl-item-text h2 {
+            font-size: 22px; } }
+        @media (min-width: 768px) {
+          .slider .owl-carousel .owl-item .owl-item-text h2 {
+            font-size: 26px; } }
+        @media (min-width: 992px) {
+          .slider .owl-carousel .owl-item .owl-item-text h2 {
+            font-size: 38px;
+            margin-bottom: 20px; } }
+        @media (min-width: 1200px) {
+          .slider .owl-carousel .owl-item .owl-item-text h2 {
+            margin-bottom: 25px; } }
+        @media (min-width: 1400px) {
+          .slider .owl-carousel .owl-item .owl-item-text h2 {
+            font-size: 44px; } }
       .slider .owl-carousel .owl-item .owl-item-text .owl-item-btnWrap {
         text-align: left; }
+        @media (min-width: 992px) {
+          .slider .owl-carousel .owl-item .owl-item-text .owl-item-btnWrap {
+            text-align: center; } }
+        .slider .owl-carousel .owl-item .owl-item-text .owl-item-btnWrap .btn {
+          padding: 4px 10px; }
+          @media (min-width: 576px) {
+            .slider .owl-carousel .owl-item .owl-item-text .owl-item-btnWrap .btn {
+              padding: 7px 15px; } }
+          @media (min-width: 992px) {
+            .slider .owl-carousel .owl-item .owl-item-text .owl-item-btnWrap .btn {
+              font-size: 14px;
+              padding: 9px 25px; } }
