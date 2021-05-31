@@ -85,5 +85,39 @@ $(document).ready(function() {
         }
     });
 
+    //B24 widget
+    var popup = document.querySelector('[data-b24-crm-button-cont]');
+    var buttonBlock = document.querySelector('[data-b24-crm-button-block]');
+    //kiem tra nut bat hay tat
+    var nutBat = true;
 
+    popup.addEventListener("click", function() {
+        if (nutBat) {
+            popup.classList.add("b24-widget-button-bottom");
+            buttonBlock.classList.remove("b24-widget-button-hide");
+            buttonBlock.classList.add("b24-widget-button-show");
+            //chuyển trạng thái nút tắt
+            nutBat = false;
+
+        } else {
+            popup.classList.remove("b24-widget-button-bottom");
+            buttonBlock.classList.add("b24-widget-button-hide");
+            buttonBlock.classList.remove("b24-widget-button-show");
+            //chuyển trạng thái nút bật
+            nutBat = true;
+
+        }
+
+    });
+
+
+
+    var bieuTuong = document.querySelectorAll('[data-b24-crm-button-icon]');
+    var i = 0
+
+    function hieuUng(i0, i1, i2) {
+        bieuTuong[i0].classList.add("b24-widget-button-icon-animation");
+        bieuTuong[i1].classList.remove("b24-widget-button-icon-animation");
+        bieuTuong[i2].classList.remove("b24-widget-button-icon-animation");
+    }
 });
