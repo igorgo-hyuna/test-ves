@@ -12,6 +12,7 @@
 10. Pre footer
 11. Footer
 12. Callback Vidget
+13. Work space
 
 */
 
@@ -54,9 +55,9 @@ h2 {
 }
 
 h2, h3 {
-   font-size: 22px;
-   color: $black;
-   font-weight: 400;
+ font-size: 22px;
+ color: $black;
+ font-weight: 400;
 }
 
 img {
@@ -758,7 +759,13 @@ header {
 .slider {
     overflow: hidden;
     padding-top: 10px;
-    padding-bottom: 40px;
+    padding-bottom: 0;
+    max-height: 426px;
+    display: none;
+
+    @media ($lg) {
+        display: block;
+    }
 
     .owl-carousel {
 
@@ -864,7 +871,11 @@ header {
 
 /* 6.  Services */
 .services {
-    padding-top: 0;
+    padding-top: 30px;
+
+    @media ($lg) {
+        padding-top: 40px;
+    }
 
     h2 {
         margin-bottom: 30px;
@@ -1078,9 +1089,16 @@ header {
         .newses__info-item {
             margin-bottom: 20px;
 
-            picture {
+            img {
                 display: inline-block;
                 margin-bottom: 20px;
+            }
+
+            .wp-block-video {
+
+                video {
+                    width: 100%;
+                }
             }
         }
     }
@@ -2448,4 +2466,105 @@ html.bx-ios.bx-ios-fix-frame-focus,
 .call-to-us.b24-widget-button-openline_livechat svg {
     margin-left: 8px;
     margin-top: 8px;
+}
+
+
+/* 13. Work space */
+.work-space {
+
+    .work-space__content {
+
+        .work-space__content-wrapp {
+
+            @media ($lg) {
+                border: 1px solid #e1dfdd;
+                padding-top: 15px;
+            }
+        }
+
+        .work-space__content-page-children {
+            margin-bottom: 20px;
+        }
+
+        &.product {
+
+            .work-space__content-page-children {
+
+                &:hover {
+                    
+                    a {
+                        @media ($lg) {
+                            border: 1px dotted #e1dfdd;
+                            margin: 0 15px 8px;
+                        }    
+                    }
+                }
+
+
+                a {
+                    display: inline-block;
+                    color: $red;
+                    border: 1px solid $white;
+
+                    @media ($lg) {
+                        margin: 0 15px 10px;
+                        padding: 10px;
+                    }
+
+
+                    &:last-child {
+                        border: 0;
+                        margin: 0;
+                        padding: 0;
+                        color: $red;
+                    }
+
+                    h2 {
+                        font-size: 16px;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .work-space__right {
+        display: none;
+
+        @media ($lg) {
+            display: block;
+        }
+
+        .work-space__right-item {
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &.with-text {
+                position: relative;
+
+                .work-space__right-content {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    h5 {
+                        color: $red;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        color: #666465;
+                    }
+                }
+            } 
+
+            a {
+                display: inline-block;
+                outline: 1px dashed $black;
+            }
+        }
+    }
 }

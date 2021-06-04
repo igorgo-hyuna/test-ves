@@ -12,7 +12,6 @@
 10. Pre footer
 11. Footer
 12. Callback Vidget
-13. Work space
 
 */
 /* 1.  Fonts including */
@@ -779,7 +778,7 @@ header {
     margin-bottom: 20px; }
   .newses .newses__info .newses__info-item {
     margin-bottom: 20px; }
-    .newses .newses__info .newses__info-item img {
+    .newses .newses__info .newses__info-item picture {
       display: inline-block;
       margin-bottom: 20px; }
     .newses .newses__info .newses__info-item .wp-block-video video {
@@ -1868,58 +1867,3 @@ html.bx-ios.bx-ios-fix-frame-focus,
 .call-to-us.b24-widget-button-openline_livechat svg {
   margin-left: 8px;
   margin-top: 8px; }
-
-/* 13. Work space */
-@media (min-width: 992px) {
-  .work-space .work-space__content .work-space__content-wrapp {
-    border: 1px solid #e1dfdd;
-    padding-top: 15px; } }
-
-.work-space .work-space__content .work-space__content-page-children {
-  margin-bottom: 20px; }
-
-@media (min-width: 992px) {
-  .work-space .work-space__content.product .work-space__content-page-children:hover a {
-    border: 1px dotted #e1dfdd;
-    margin: 0 15px 8px; } }
-
-.work-space .work-space__content.product .work-space__content-page-children a {
-  display: inline-block;
-  color: #b32317;
-  border: 1px solid #fff; }
-  @media (min-width: 992px) {
-    .work-space .work-space__content.product .work-space__content-page-children a {
-      margin: 0 15px 10px;
-      padding: 10px; } }
-  .work-space .work-space__content.product .work-space__content-page-children a:last-child {
-    border: 0;
-    margin: 0;
-    padding: 0;
-    color: #b32317; }
-  .work-space .work-space__content.product .work-space__content-page-children a h2 {
-    font-size: 16px;
-    margin-bottom: 0; }
-
-.work-space .work-space__right {
-  display: none; }
-  @media (min-width: 992px) {
-    .work-space .work-space__right {
-      display: block; } }
-  .work-space .work-space__right .work-space__right-item {
-    margin-bottom: 20px; }
-    .work-space .work-space__right .work-space__right-item:last-child {
-      margin-bottom: 0; }
-    .work-space .work-space__right .work-space__right-item.with-text {
-      position: relative; }
-      .work-space .work-space__right .work-space__right-item.with-text .work-space__right-content {
-        position: absolute;
-        top: 0;
-        left: 0; }
-        .work-space .work-space__right .work-space__right-item.with-text .work-space__right-content h5 {
-          color: #b32317;
-          font-weight: bold; }
-        .work-space .work-space__right .work-space__right-item.with-text .work-space__right-content p {
-          color: #666465; }
-    .work-space .work-space__right .work-space__right-item a {
-      display: inline-block;
-      outline: 1px dashed #000; }
