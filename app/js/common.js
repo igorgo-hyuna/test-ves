@@ -9,7 +9,7 @@ $(document).ready(function() {
         $(".top_mnu").fadeOut(600);
         $(".sandwich").toggleClass("active");
         $(".top_text").css("opacity", "1");
-    }).append("<span>");
+    });
 
     /* Burger. Open and close */
     $(".toggle_mnu").click(function() {
@@ -29,6 +29,7 @@ $(document).ready(function() {
     $('.menu-item-has-children').click( function(){
       $(this).toggleClass('active');
     });
+
 
     /********** Sticky menu **********/
     // When the user scrolls the page, execute myFunction
