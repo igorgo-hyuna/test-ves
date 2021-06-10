@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Metas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="navbar">
+        <div class="top-bar__wrapp">
+            <div class="container">
+                <div class="row top-bar">
+                    <div class="col-0 col-sm-0 col-md-0 col-lg-4 col-xl-4 top-bar__adress">
+                        <svg>
+                            <image x="0px" y="0px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABUFBMVEX////9oaPyTk/rKSvrJyntMjT3bG3/1NT/+/vySUvsKiz8kJD/19f/5+f/xMT1X2DmDhH8m530VVjySkz/+vnmEBL/t7n/s7XrKCn/29v1W13xRkn7iIj+nZ/tLjH2YmP5cXL/0M/pHB/4dXf+rK3tMzT2ZWbuMzX+trj4c3T+p6j3Z2j2aGn/9vfrKiz/wMH1Xl/7iYr6fX//vb70VVb+nqHySUr9mJj3Z2n7goP5cnP9oaH8j5DrJSj/8/P+rKzrIyf2XF38iov2aGr4bXD/+fn4aGnzVlbrKCr+tbf/9/fuNDX/wcH/r7DtNjf/ubv9lpb/6Oj+ra7+/f3tODn+oqTvPj78mpv/+Pj/q6v/9vbwQEH4dHXqISP+rq7/5OToGR3/vL3yTlD1YGL+qKnlDBD/5ub7iIn/8vL6e3zvPkDnFxj/2dn3ZmfiAwP/yMjND+o0AAAAAWJLR0QAiAUdSAAAAAd0SU1FB+UFGhURHCAsBt4AAADKSURBVBjTY2AAAUYmZhZWNnYGGODg5OLm4eXjFxCEiQgJi4BpPlExiIC4BAeDpJS0DAODrBwHWERegUFRSVlFVY2BQV0DLKKpxaCtw8Cgq6fPYGAIFjEyZjAxBdJm5gwWlmARK2sGG1s7BnsHXgZHJ7CIswuDq5u6u4cng5e3D1jE1w9I+AcEMjAEeQdDrA8JhTosLBzKCGKJANORXFEwR0fHgMio2Di4x+ITEoFkUjIDAqSkpjGkS2QgiTBkZoVn5zCggNy8fCgLABC+Gg9nVFCHAAAAAElFTkSuQmCC" />
+                        </svg>
+                        <p>м.Київ, вулиця Володимира Сосюри, будинок 68</p>
+                    </div>
+                    <div class="col-0 col-sm-0 col-md-0 col-lg-4 col-xl-4 top-bar__slogan">
+                        <h3>Ваги з українським серцем!</h3>
+                    </div>
+                    <div class="col-0 col-sm-0 col-md-0 col-lg-4 col-xl-4 top-bar__language-switcher">
+                        <select name="lang_choice_2" id="lang_choice_2">
+                            <option value="uk">Укр</option>
+                            <option value="ru">Рус</option>
+                            <option value="en" selected="selected">Eng</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Toggle menu -->
+        <button class="toggle_mnu">
+            <span class="sandwich">
+                <span class="sw-topper"></span>
+                <span class="sw-bottom"></span>
+                <span class="sw-footer"></span>
+            </span>
+        </button>
+        <div class="wrapper_mnu"></div>
+        <nav class="top_mnu">
+            <div class="menu-glavnoe-menyu-container">
+                <ul id="menu-glavnoe-menyu" class="menu">
+                    <li id="menu-item-60" class="current-menu-item"><a href="#" aria-current="page">Главная</a></li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#">Продукція</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Автомобільні ваги</a></li>
+                            <li class="menu-item"><a href="#">Вагонні ваги</a></li>
+                            <li class="menu-item"><a href="#">Платформні ваги</a></li>
+                            <li class="menu-item"><a href="#">Ваги для тварин</a></li>
+                            <li class="menu-item"><a href="#">Товарні ваги</a></li>
+                            <li class="menu-item"><a href="#">Палетні ваги</a></li>
+                            <li class="menu-item"><a href="#">Стрижневі ваги</a></li>
+                            <li class="menu-item"><a href="#">Монорейкові ваги</a></li>
+                            <li class="menu-item"><a href="#">Ваги рокла</a></li>
+                            <li class="menu-item"><a href="#">Бункерні ваги</a></li>
+                            <li class="menu-item"><a href="#">Ваговимірювальні перетворювачі</a></li>
+                            <li class="menu-item"><a href="#">Тензодатчики</a></li>
+                            <li class="menu-item"><a href="#">Программное обеспечение</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#">Послуги</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Техническое обслуживание весов и весового оборудования</a></li>
+                            <li class="menu-item"><a href="#">Ремонт электронных весов</a></li>
+                            <li class="menu-item"><a href="#">Поверка и настройка весов</a></li>
+                            <li class="menu-item"><a href="#">Модернизация весов автомобильных</a></li>
+                            <li class="menu-item"><a href="#">Модернизация весов вагонных</a></li>
+                            <li class="menu-item"><a href="#">Модернизация електротележек в весовую</a></li>
+                            <li class="menu-item"><a href="#">Автоматизация взвешивания</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#">Рішення</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">1</a></li>
+                            <li class="menu-item"><a href="#">2</a></li>
+                            <li class="menu-item"><a href="#">3</a></li>
+                            <li class="menu-item"><a href="#">4</a></li>
+                            <li class="menu-item"><a href="#">5</a></li>
+                            <li class="menu-item"><a href="#">6</a></li>
+                            <li class="menu-item"><a href="#">7</a></li>
+                            <li class="menu-item"><a href="#">8</a></li>
+                            <li class="menu-item"><a href="#">9</a></li>
+                            <li class="menu-item"><a href="#">10</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#">Підтримка</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Залишити заявку</a></li>
+                            <li class="menu-item"><a href="#">База знань</a></li>
+                            <li class="menu-item"><a href="#">Питання-відповідь</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-60" class="current-menu-item"><a href="#" aria-current="page">Про компанію</a></li>
+                    <li id="menu-item-60" class="current-menu-item"><a href="#" aria-current="page">Новини</a></li>
+                    <li id="menu-item-60" class="current-menu-item"><a href="#" aria-current="page">Медіа</a></li>
+                    <li id="menu-item-60" class="current-menu-item"><a href="#" aria-current="page">Контакти</a></li>
+                    <li id="menu-item-60" class="current-menu-item"><a href="#" aria-current="page">Представники</a></li>
+                </ul>
+            </div>
+            <div class="more-info-box">
+                <div class="phone-box">
+                    <a href="tel:0800301770">
+                        <svg viewBox="0 0 18 18">
+                            <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Rounded" transform="translate(-749.000000, -1263.000000)">
+                                    <g id="Communication" transform="translate(100.000000, 1162.000000)">
+                                        <g id="-Round-/-Communication-/-phone" transform="translate(646.000000, 98.000000)">
+                                            <g>
+                                                <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                                                <path d="M19.23,15.26 L16.69,14.97 C16.08,14.9 15.48,15.11 15.05,15.54 L13.21,17.38 C10.38,15.94 8.06,13.63 6.62,10.79 L8.47,8.94 C8.9,8.51 9.11,7.91 9.04,7.3 L8.75,4.78 C8.63,3.77 7.78,3.01 6.76,3.01 L5.03,3.01 C3.9,3.01 2.96,3.95 3.03,5.08 C3.56,13.62 10.39,20.44 18.92,20.97 C20.05,21.04 20.99,20.1 20.99,18.97 L20.99,17.24 C21,16.23 20.24,15.38 19.23,15.26 Z" fill="#1D1D1D"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        +38 (0800) 301 770</a><br>
+                </div>
+                <p>
+                    <svg width="14px" height="20px" viewBox="0 0 14 20">
+                        <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Rounded" transform="translate(-377.000000, -1306.000000)">
+                                <g id="Communication" transform="translate(100.000000, 1162.000000)">
+                                    <g id="-Round-/-Communication-/-location_on" transform="translate(272.000000, 142.000000)">
+                                        <g>
+                                            <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                                            <path d="M12,2 C8.13,2 5,5.13 5,9 C5,13.17 9.42,18.92 11.24,21.11 C11.64,21.59 12.37,21.59 12.77,21.11 C14.58,18.92 19,13.17 19,9 C19,5.13 15.87,2 12,2 Z M12,11.5 C10.62,11.5 9.5,10.38 9.5,9 C9.5,7.62 10.62,6.5 12,6.5 C13.38,6.5 14.5,7.62 14.5,9 C14.5,10.38 13.38,11.5 12,11.5 Z" fill="#1D1D1D"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    м.Київ, вулиця Володимира Сосюри, будинок 68</p>
+            </div>
+        </nav>
+        <div class="sticky-wrapp">
+            <div class="container">
+                <div class="row bottom-bar">
+                    <div class="col-12 col-sm-5 col-md-4 col-lg-3 col-xl-3 bottom-bar__logo">
+                        <a href="#">
+                            <svg>
+                                <image x="0px" y="0px" xlink:href="data:img/png;base64,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" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-7 col-md-4 col-lg-4 col-xl-4 bottom-bar__search-box">
+                        <form role="search" method="get" id="searchform" class="searchform" action="#">
+                            <div>
+                                <label class="screen-reader-text" for="s">Search for:</label>
+                                <input type="text" value="" name="s" id="s">
+                                <input type="submit" id="searchsubmit" value="Search">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-0 col-sm-0 col-md-4 col-lg-5 col-xl-5 bottom-bar__contacts">
+                        <a href="#" data-toggle="modal" data-target="#exampleModalLong">
+                            <svg viewBox="0 0 64 48">
+                                <g id="Layer_2" data-name="Layer 2">
+                                    <g id="Layer_1-2" data-name="Layer 1">
+                                        <path class="cls-1" d="M63.47,5.17A8,8,0,0,0,56,0H8A8,8,0,0,0,.48,5.33,7.44,7.44,0,0,0,0,8V40a8,8,0,0,0,5,7.41A7.85,7.85,0,0,0,8,48H56a7.32,7.32,0,0,0,2.85-.56A7.84,7.84,0,0,0,63,43.89,8,8,0,0,0,64,40V8A7.86,7.86,0,0,0,63.47,5.17ZM5.33,8A2.68,2.68,0,0,1,8,5.33H56A2.68,2.68,0,0,1,58.67,8v.51l-21.26,16L33,27.92l-1,.75-1-.78-4.46-3.33L5.33,8.61Zm0,32V15.28L22.11,27.89,5.39,40.45A2,2,0,0,1,5.33,40Zm6,2.67L26.56,31.23l3.84,2.9a2.64,2.64,0,0,0,3.2,0l3.81-2.88L52.53,42.67ZM58.67,40a2,2,0,0,1-.08.56L41.84,27.89,58.67,15.17Z" />
+                                    </g>
+                                </g>
+                            </svg>
+                            Задати питання</a>
+                        <a href="tel:0800301770" class="bottom-bar__contacts-phone">
+                            <svg viewBox="0 0 18 18">
+                                <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Rounded" transform="translate(-749.000000, -1263.000000)">
+                                        <g id="Communication" transform="translate(100.000000, 1162.000000)">
+                                            <g id="-Round-/-Communication-/-phone" transform="translate(646.000000, 98.000000)">
+                                                <g>
+                                                    <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                                                    <path d="M19.23,15.26 L16.69,14.97 C16.08,14.9 15.48,15.11 15.05,15.54 L13.21,17.38 C10.38,15.94 8.06,13.63 6.62,10.79 L8.47,8.94 C8.9,8.51 9.11,7.91 9.04,7.3 L8.75,4.78 C8.63,3.77 7.78,3.01 6.76,3.01 L5.03,3.01 C3.9,3.01 2.96,3.95 3.03,5.08 C3.56,13.62 10.39,20.44 18.92,20.97 C20.05,21.04 20.99,20.1 20.99,18.97 L20.99,17.24 C21,16.23 20.24,15.38 19.23,15.26 Z" fill="#1D1D1D"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            +38 (0800) 301 770
+                            <span>Безкоштовний дзвінок по Україні</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-wrapp">
+                <div class="container">
+                    <div class="row nav">
+                        <div class="col-0 col-sm-0 col-md-0 col-lg-12 col-xl-12 nav__list">
+                            <div class="menu-glavnoe-menyu-container">
+                                <ul id="menu-glavnoe-menyu" class="menu">
+                                    <li id="menu-item-60" class="current-menu-item"><a href="#" aria-current="page">Головна</a></li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#">Продукція</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="#">Автомобільні ваги</a></li>
+                                            <li class="menu-item"><a href="#">Вагонні ваги</a></li>
+                                            <li class="menu-item"><a href="#">Платформні ваги</a></li>
+                                            <li class="menu-item"><a href="#">Ваги для тварин</a></li>
+                                            <li class="menu-item"><a href="#">Товарні ваги</a></li>
+                                            <li class="menu-item"><a href="#">Палетні ваги</a></li>
+                                            <li class="menu-item"><a href="#">Стрижневі ваги</a></li>
+                                            <li class="menu-item"><a href="#">Монорейкові ваги</a></li>
+                                            <li class="menu-item"><a href="#">Ваги рокла</a></li>
+                                            <li class="menu-item"><a href="#">Бункерні ваги</a></li>
+                                            <li class="menu-item"><a href="#">Ваговимірювальні перетворювачі</a></li>
+                                            <li class="menu-item"><a href="#">Тензодатчики</a></li>
+                                            <li class="menu-item"><a href="#">Программное обеспечение</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#">Послуги</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="#">Техническое обслуживание весов и весового оборудования</a></li>
+                                            <li class="menu-item"><a href="#">Ремонт электронных весов</a></li>
+                                            <li class="menu-item"><a href="#">Поверка и настройка весов</a></li>
+                                            <li class="menu-item"><a href="#">Модернизация весов автомобильных</a></li>
+                                            <li class="menu-item"><a href="#">Модернизация весов вагонных</a></li>
+                                            <li class="menu-item"><a href="#">Модернизация електротележек в весовую</a></li>
+                                            <li class="menu-item"><a href="#">Автоматизация взвешивания</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#">Рішення</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="#">М'ясопереробна промисловість</a></li>
+                                            <li class="menu-item"><a href="#">Зернопереробна промисловість</a></li>
+                                            <li class="menu-item"><a href="#">Сельское хозяйство</a></li>
+                                            <li class="menu-item"><a href="#">Молочна промисловість</a></li>
+                                            <li class="menu-item"><a href="#">Склад і логістика</a></li>
+                                            <li class="menu-item"><a href="#">Дорожній контроль</a></li>
+                                            <li class="menu-item"><a href="#">Кондитерська промисловість</a></li>
+                                            <li class="menu-item"><a href="#">Будівельна промисловість</a></li>
+                                            <li class="menu-item"><a href="#">Хімічна промисловість</a></li>
+                                            <li class="menu-item"><a href="#">Гірничодобувна промисловість</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#">Підтримка</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="#">Залишити заявку</a></li>
+                                            <li class="menu-item"><a href="#">База знань</a></li>
+                                            <li class="menu-item"><a href="#">Питання-відповідь</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-60" class="current-menu-item"><a href="#" aria-current="page">Про компанію</a></li>
+                                    <li id="menu-item-60" class="current-menu-item"><a href="#" aria-current="page">Новини</a></li>
+                                    <li id="menu-item-60" class="current-menu-item"><a href="#" aria-current="page">Медіа</a></li>
+                                    <li id="menu-item-60" class="current-menu-item"><a href="#" aria-current="page">Контакти</a></li>
+                                    <li id="menu-item-60" class="current-menu-item"><a href="#" aria-current="page">Представники</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- / Header -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Будем рады помочь</h5>
+                    <p>Вы можете добавить услуги кварцевания или дезинфекции и обезопасить свой дом.</p>
+                    <div class="form-box">
+                        <div role="form" class="wpcf7" id="wpcf7-f263-p261-o1" lang="ru-RU" dir="ltr">
+                            <form action="/kontakty/#wpcf7-f263-p261-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+                                <p><label>
+                                        <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" placeholder="Имя" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span> </label></p>
+                                <p>
+                                    <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" placeholder="+380(__)___-__-__" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span> </label></p>
+                                <p><input type="submit" value="Отправить" class="wpcf7-form-control wpcf7-submit"></p>
+                                <div class="wpcf7-response-output" aria-hidden="true"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ Modal -->
+
+  
+
+
+<section class="work-space inner-page-full-width">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 work-space__banner">
+                <div class="work-space__banner-wrapp">
+                    <img src="img/pidtrymka.jpg" alt="banner pidtrymka">
+                    <div class="work-space__banner-content">
+                        <h2>Сервісна підтримка</h2>
+                        <p>Співробітники сервісної служби щодня готові виїхати на місце обслуговування ваг. Широка мережа філій і сервісних центрів в Україні і країнах СНД!</p>
+                    </div>
+                </div>
+            </div>
+
+            <h1>Підтримка</h1>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 work-space__pydrimka-item">
+                <a href="#">
+                    <span class="img-wrapp">
+                        <img src="img/pidtrymka-1.jpg" alt="pitrymka">
+                    </span>
+                    <span>Залишити заявку</span>
+                    Повірка, технічне обслуговування, ремонт
+                </a>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 work-space__pydrimka-item">
+                <a href="#">
+                    <span class="img-wrapp">
+                        <img src="img/pidtrymka-2.jpg" alt="pitrymka">
+                    </span>
+                    <span>Залишити заявку</span>
+                    Повірка, технічне обслуговування, ремонт
+                </a>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 work-space__pydrimka-item">
+                <a href="#">
+                    <span class="img-wrapp">
+                        <img src="img/pidtrymka-3.jpg" alt="pitrymka">
+                    </span>
+                    <span>Залишити заявку</span>
+                    Повірка, технічне обслуговування, ремонт
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<section class="contact-from">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+                <div class="contact-from__wrapp">  
+                <div role="form" class="wpcf7" id="wpcf7-f408-o1" lang="ru-RU" dir="ltr">
+                    <div class="screen-reader-response">
+                        <p role="status" aria-live="polite" aria-atomic="true">Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.</p>
+                        <ul>
+                            <li id="wpcf7-f408-o1-ve-textarea-118">Поле обязательно для заполнения.</li>
+                            <li id="wpcf7-f408-o1-ve-text-34">Поле обязательно для заполнения.</li>
+                            <li id="wpcf7-f408-o1-ve-email-243">Поле обязательно для заполнения.</li>
+                        </ul>
+                    </div>
+                    <form action="/metas/pidtrimka/#wpcf7-f408-o1" method="post" class="wpcf7-form invalid" novalidate="novalidate" data-status="invalid">
+                        <div style="display: none;">
+                            <input type="hidden" name="_wpcf7" value="408">
+                            <input type="hidden" name="_wpcf7_version" value="5.4.1">
+                            <input type="hidden" name="_wpcf7_locale" value="ru_RU">
+                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f408-o1">
+                            <input type="hidden" name="_wpcf7_container_post" value="0">
+                            <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                        </div>
+                        <div class="form_left-side">
+                            <span><br>
+                                Тема листа:*<br>
+                                <span class="wpcf7-form-control-wrap menu-122"><select name="menu-122" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
+                                    <option value="Оберіть тему листа..." selected="selected">Оберіть тему листа...</option>
+                                    <option value="Технічна підтримка">Технічна підтримка</option>
+                                    <option value="Відгук про продукцію">Відгук про продукцію</option>
+                                    <option value="Відгук про роботу компанії">Відгук про роботу компанії</option>
+                                    <option value="Співробітництво">Співробітництво</option>
+                                </select></span><br>
+                            </span><br>
+                            <span><br>
+                                Текст повідомлення:*<br>
+                                <span class="wpcf7-form-control-wrap textarea-118"><textarea name="textarea-118" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required wpcf7-not-valid" aria-required="true" aria-invalid="true" aria-describedby="wpcf7-f408-o1-ve-textarea-118"></textarea><span class="wpcf7-not-valid-tip" aria-hidden="true">Поле обязательно для заполнения.</span></span><br>
+                            </span>
+                        </div>
+                        <div class="form_right-side">
+                            <span><br>
+                                Ваше ім'я: *<br>
+                                <span class="wpcf7-form-control-wrap text-34"><input type="text" name="text-34" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required wpcf7-not-valid" aria-required="true" aria-invalid="true" aria-describedby="wpcf7-f408-o1-ve-text-34"><span class="wpcf7-not-valid-tip" aria-hidden="true">Поле обязательно для заполнения.</span></span><br>
+                            </span><br>
+                            <span><br>
+                                E-mail: *<br>
+                                <span class="wpcf7-form-control-wrap email-243"><input type="email" name="email-243" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email wpcf7-not-valid" aria-required="true" aria-invalid="true" aria-describedby="wpcf7-f408-o1-ve-email-243"><span class="wpcf7-not-valid-tip" aria-hidden="true">Поле обязательно для заполнения.</span></span><br>
+                            </span><br>
+                            <span><br>
+                                Назва компанії:<br>
+                                <span class="wpcf7-form-control-wrap text-3"><input type="text" name="text-3" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false"></span><br>
+                            </span>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="submit-wrapp">
+                            <input type="submit" value="Відправити" class="wpcf7-form-control wpcf7-submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Banners -->
+    <section class="banners">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 banners__item">
+                    <a href="#" class="banners__item-wrapp">
+                        <picture>
+                            <source srcset="img/banner-1.webp" type="image/webp">
+                            <source srcset="img/banner-1.jpg" type="image/jpg">
+                            <img alt="banner 1" loading="lazy" src="/img/banner-1.jpg">
+                        </picture>
+                        <div class="banners__item-content">
+                            <h3>Галузеві рішення</h3>
+                            <p>Зручний підбір обладнання</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 banners__item">
+                    <a href="#" class="banners__item-wrapp">
+                        <picture>
+                            <source srcset="/img/banner-2.webp" type="image/webp">
+                            <source srcset="/img/banner-2.jpg" type="image/jpg">
+                            <img alt="banner 2" loading="lazy" src="/img/banner-2.jpg">
+                        </picture>
+                        <div class="banners__item-content">
+                            <h3>Технічна підтримка</h3>
+                            <p>Розділ для користувачів нашої продукції</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / Banners -->
+
+
+
+
+    <!-- Pre-footer -->
+    <section class="pre-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <h5>Каталог продукції</h5>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="pre-footer__wrapp">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 pre-footer__item">
+                        <ul>
+                            <li><a href="#">Автомобільні ваги</a></li>
+                            <li><a href="#">Вагонні ваги</a></li>
+                            <li><a href="#">Платформні ваги</a></li>
+                            <li><a href="#">Ваги для тварин</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 pre-footer__item">
+                        <ul>
+                            <li><a href="#">Товарні ваги</a></li>
+                            <li><a href="#">Палетні ваги</a></li>
+                            <li><a href="#">Стрижневі ваги</a></li>
+                            <li><a href="#">Монорейкові ваги</a></li>
+                            <li><a href="#">Ваги рокла</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 pre-footer__item">
+                        <ul>
+                            <li><a href="#">Бункерні ваги</a></li>
+                            <li><a href="#">Ваговимірювальні перетворювачі</a></li>
+                            <li><a href="#">Тензодатчики</a></li>
+                            <li><a href="#">Программное обеспечение</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / Pre-footer -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 footer__item logo">
+                    <a href="#">
+                        <svg>
+                            <image x="0px" y="0px" xlink:href="data:img/png;base64,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" />
+                        </svg>
+                    </a>
+                    <p>© 1998-2021 <br />
+                        Компания «Metas» — <span>Автомобільні ваги, вагонні ваги, стрижневі ваги і багато іншого...</span></p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 footer__item adress">
+                    <p>Наша адреса:</p>
+                    <p>м.Київ, <br> вулиця Володимира Сосюри, <br> будинок 68</p>
+                    <a href="#">Схема проїзду</a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 footer__item phone">
+                    <p>Безкоштовний дзвінок по Україні</p>
+                    <a href="tel:0800301770">
+                        +38 (0800) 301 770
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 footer__item contacts">
+                    <p>Электронная почта:</p>
+                    <a href="mailto:vesservice.kiev@gmail.com">
+                        vesservice.kiev@gmail.com
+                    </a>
+                    <a href="#" data-toggle="modal" data-target="#exampleModalLong">Задати питання</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bot">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <p>Всі права на матеріали сайту належать компанії «Metas». При використанні матеріалів посилання на наш сайт обов'язкове.</p>
+                        <a href="#">Політика конфіденційності</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- / Footer -->
+    <!-- Callback widget -->
+    <div dir="ltr" data-b24-crm-button-cont="" class="b24-widget-button-wrapper b24-widget-button-position-bottom-left b24-widget-button-visible">
+        <div data-b24-crm-button-block="" class="b24-widget-button-social b24-widget-button-hide">
+            <a href="tel:0800301770" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62px" height="62px">
+                    <image x="0px" y="0px" width="62px" height="62px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAA+CAMAAABEH1h2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABJlBMVEUATXP///8ATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXMATXOPscLf6e1QhZ+Aprn///9gkKggY4WgvcsQWHzA09ywyNTw9fcwb41Aepbg6e6vx9OfvMpwm7C/0tzQ3uVvmrCQssLUckAgAAAAS3RSTlMAAA9Ne6LK4/TkI3/I/ANaxP5j2zfNCZP9JtND8O9V+UIKlZQ+OATOYtxbKiuCyRBMo/Lz7N+AgSTFz9UHJ1ZXRNRm4gZfxstOq8yrT4e1AAAAAWJLR0QB/wIt3gAAAAd0SU1FB+UDAREiN3eqF0wAAAKHSURBVEjHrdf5W9owGAfwqOgESxFQDmUgY8DmpsAu0A28z3fScIvzmP//P7FyNknT9s3z7Ptb0+cDTZMmbwiRZ3HJt7zyZhVg1b+y7FtanN9Y4CK1gTUtCFyC2loAx/XQehgkCa+HdE+uR6LgmGhEd+cbm+CazQ0XHosnwCOJeMyJJ7e88ChbSTnfTmE0wNttGU9ncBogk7bzdBCrzVmQFvkO+r/H/7/D8ySy37OkkiyPod459/6zDH9ntf++a6J8zuLvrUluUEpbGJ7Iz3jBevQ2pVhf1Kc8YrV1KN5/mPDCx3lLl1K8jxbGfNdqaVIVHxpzzWowqIrXRvwT09CjSv6zyfccOPUe/z2T7zvxviffXyCloAMf3HvyYImU2WtDSQOUiY+9bKpp8JEKe9lV01BhR91MX0mDRvzc9VBhzpvxky98w8OYD5H8KxEaJi/vD5KDyKdD/4jTGfHhoT1Q8N+EV2fmieL9d2HgRunbfetZPhYaP23G6b6IvuU0lhV+0k5yP+B9y3Eu+PhPRupbzutHmf9gZX6mJd78YLnlwuaf/z66rF/mckF+gJvnI/iqyWvSMgzaL54+XBst1AdSDt2OzLPr54G4TfB5knTgjrm/K25SYgd6Nv5q3Z1uUuwWKWbI/8CA7ft0iyT6Ibj8QGfehQejy9w4nG3QJO9eTA6N117fMPj1zyoPCMmBcuJMbZP9qaqLv9jCrK5amNX+Z1lISEOlKG3YS+IjfEncsJfEhBwj+586lh8H6icYfVJ3Ooxkc96HkVzW5SiUL7rrYt79IFY4PXPGZ6cFz2Pg+cWlfP25vDhHnCLNBKpX4iH0qoo8hE5Suq7e3E6OwLc31evS/AbP/wFDZHfptTOuTQAAAABJRU5ErkJggg==" />
+                </svg>
+            </a>
+            <a href="mailto:vesservice.kiev@gmail.com">
+                <svg width="62px" height="62px">
+                    <image x="0px" y="0px" width="62px" height="62px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAA+CAMAAABEH1h2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB4FBMVEWzIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxezIxe4MSbirKj36ef67+/46ejjr6q5Myjiq6f////ksKz57u357+768PD+/f379fTw1NL89vb9+vr78/L14uDdnZfuzcrcm5X03tzUhH3XjIb9+Pjbl5LSfXb46unZkIrEVUzty8jy2dfHXFPUgnv+/PvnuLS8PTLeoJu7OS/hp6Lz3NvBS0HBTEP25eTIX1fPdG21KBzltbHHXlW0Jhv04N768fDReXK3LSLksKu+Qjjqwb3TfnfMa2PblpDw0tDGWlHAST/uz8z35+bKZVzQdm7qw7/JY1q/RjvVhX+9QDbiqqbv0M7FWE/rxMHNb2fARz3x1tPpv7zjrqnfpJ/nurbaDJgQAAAASnRSTlMAD017osrj9OQjf8j8A1rE/mPbN80Jk/0m00Pw71X5QgqVlD44BM5i3FsqK4LJEEyj8vPs34CBJMXP1QcnVldE1GbiBl/Gy06rzIWiKH8AAAABYktHRFN6Zx0GAAAAB3RJTUUH5QUfFCETWcm3uQAAAu9JREFUSMet1/lf0mAcB/BH0TwARTzwSCUCylKkC7U07+sr0fFkCmhaSUlWZlaaB1mRHVrZaaf9q8EE9mx7tj0jP7/AeD3vbTzXvkOInoxMXVb2vhyAnNzsLF1mBtKQvHy9AQQx6PPz2KyxoNAElJgKC4zquMgMsjEXqZyguAQUU1KsgEvLLKASS1mpnC6vUMPxVJTTdWUViwbYX0nT1TVsGqCmmqINrDo2CyS+lvna3PVrRb3G+L+TqRL0XylTnwv630rwA1o1gI3XB03aucWe1A7Ntx6PMzn/i9LRAIcSFz+cHjc7OF6XngYo4Lie/2HIe86nnPMXLqZa6+P6CHG+S1g9l/nmR2O8nuDDDPwK37w+xhsIPjKqqkdH+OYNCLnIlebzB4KKeCww7uObG1yokexLH746MamgA9euY4JDI9IJOfbdmArJ6Zu3prGA65BbxDEO356h4jt3781iIXeTo57g+P7c1KxUP5h/yH2SXI9ypRw/erwQEOHFJ3OJTiF5LjpG4Ti4tDwh0CtDq9NYyo8joHGMvZHVp6mDtWeRcOqA5CDHVwCev0h8n4kCvKTyGvrNj64vTyy+giXu+DUsvAlHpmj8BLXrpt9ubMaHGaIz+N17+ODHeCv6cVjKT9IGbvLT57Hdu/4C6/ORr9x3//rGN8rASaeNd/t76kZ/wM9fyYPf23/E3C2ZtGM74XFixP7yvYnXwjsh8aQVLZng1qbCktncCoqWjHDB4mAIKyUk4LEFK9gufFg9BI9tF+gUwUcYOLHbeGK8iXhCadvrTE3xrbaZ59p22mbxY0LbPl+3Fw+p/3xEImNLOrolVaDaVYtJafjyACGbdl5G1DbW01q18wxZWrVqLcya9rIsRKhNS1HaJi1qz7KXxBSNUDvj/69qpxf0rR0suqMVycRqU38ZsVmRfOxOZe20I8U4OrvkcVenA6mlu6eXXiH39nSrYi55nj7xS2ifh/EldDeufs/A4O4r8OCAp98l0+wff2mO9FmfgsAAAAAASUVORK5CYII=" />
+                </svg>
+            </a>
+        </div>
+        <div data-b24-crm-button-block-button="" class="b24-widget-button-inner-container">
+            <div data-b24-crm-button-block-border="" class="b24-widget-button-inner-mask" style="background: #EE1D24;"></div>
+            <div class="b24-widget-button-block">
+                <div data-b24-crm-button-pulse="" class="b24-widget-button-pulse b24-widget-button-pulse-animate" style="border-color: #EE1D24;"></div>
+                <div data-b24-crm-button-block-inner="" class="b24-widget-button-inner-block" style="background: #EE1D24;">
+                    <div class="b24-widget-button-icon-container">
+                        <div data-b24-crm-button-icon="crmform" class="b24-widget-button-inner-item b24-widget-button-icon-animation" style="">
+                            <svg class="b24-crm-button-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 28">
+                                <path class="b24-crm-button-webform-icon" fill="#FFFFFF" fill-rule="evenodd" d="M815.406703,961 L794.305503,961 C793.586144,961 793,961.586144 793,962.305503 L793,983.406703 C793,984.126062 793.586144,984.712206 794.305503,984.712206 L815.406703,984.712206 C816.126062,984.712206 816.712206,984.126062 816.712206,983.406703 L816.712206,962.296623 C816.703325,961.586144 816.117181,961 815.406703,961 L815.406703,961 Z M806.312583,979.046143 C806.312583,979.454668 805.975106,979.783264 805.575462,979.783264 L796.898748,979.783264 C796.490224,979.783264 796.161627,979.445787 796.161627,979.046143 L796.161627,977.412044 C796.161627,977.003519 796.499105,976.674923 796.898748,976.674923 L805.575462,976.674923 C805.983987,976.674923 806.312583,977.0124 806.312583,977.412044 L806.312583,979.046143 L806.312583,979.046143 Z M813.55946,973.255747 C813.55946,973.664272 813.221982,973.992868 812.822339,973.992868 L796.889868,973.992868 C796.481343,973.992868 796.152746,973.655391 796.152746,973.255747 L796.152746,971.621647 C796.152746,971.213122 796.490224,970.884526 796.889868,970.884526 L812.813458,970.884526 C813.221982,970.884526 813.550579,971.222003 813.550579,971.621647 L813.550579,973.255747 L813.55946,973.255747 Z M813.55946,967.45647 C813.55946,967.864994 813.221982,968.193591 812.822339,968.193591 L796.889868,968.193591 C796.481343,968.193591 796.152746,967.856114 796.152746,967.45647 L796.152746,965.82237 C796.152746,965.413845 796.490224,965.085249 796.889868,965.085249 L812.813458,965.085249 C813.221982,965.085249 813.550579,965.422726 813.550579,965.82237 L813.550579,967.45647 L813.55946,967.45647 Z" transform="translate(-793 -961)"></path>
+                            </svg>
+                        </div>
+                        <div data-b24-crm-button-icon="callback" class="b24-widget-button-inner-item " style="">
+                            <svg class="b24-crm-button-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 30">
+                                <path class="b24-crm-button-call-icon" fill="#FFFFFF" fill-rule="evenodd" d="M940.872414,978.904882 C939.924716,977.937215 938.741602,977.937215 937.79994,978.904882 C937.08162,979.641558 936.54439,979.878792 935.838143,980.627954 C935.644982,980.833973 935.482002,980.877674 935.246586,980.740328 C934.781791,980.478121 934.286815,980.265859 933.840129,979.97868 C931.757607,978.623946 930.013117,976.882145 928.467826,974.921839 C927.701216,973.947929 927.019115,972.905345 926.542247,971.731659 C926.445666,971.494424 926.463775,971.338349 926.6509,971.144815 C927.36922,970.426869 927.610672,970.164662 928.316918,969.427987 C929.300835,968.404132 929.300835,967.205474 928.310882,966.175376 C927.749506,965.588533 927.206723,964.77769 926.749111,964.14109 C926.29156,963.50449 925.932581,962.747962 925.347061,962.154875 C924.399362,961.199694 923.216248,961.199694 922.274586,962.161118 C921.55023,962.897794 920.856056,963.653199 920.119628,964.377388 C919.437527,965.045391 919.093458,965.863226 919.021022,966.818407 C918.906333,968.372917 919.274547,969.840026 919.793668,971.269676 C920.856056,974.228864 922.473784,976.857173 924.43558,979.266977 C927.085514,982.52583 930.248533,985.104195 933.948783,986.964613 C935.6148,987.801177 937.341181,988.444207 939.218469,988.550339 C940.510236,988.625255 941.632988,988.288132 942.532396,987.245549 C943.148098,986.533845 943.842272,985.884572 944.494192,985.204083 C945.459999,984.192715 945.466036,982.969084 944.506265,981.970202 C943.359368,980.777786 942.025347,980.091055 940.872414,978.904882 Z M940.382358,973.54478 L940.649524,973.497583 C941.23257,973.394635 941.603198,972.790811 941.439977,972.202844 C940.97488,970.527406 940.107887,969.010104 938.90256,967.758442 C937.61538,966.427182 936.045641,965.504215 934.314009,965.050223 C933.739293,964.899516 933.16512,965.298008 933.082785,965.905204 L933.044877,966.18514 C932.974072,966.707431 933.297859,967.194823 933.791507,967.32705 C935.117621,967.682278 936.321439,968.391422 937.308977,969.412841 C938.23579,970.371393 938.90093,971.53815 939.261598,972.824711 C939.401641,973.324464 939.886476,973.632369 940.382358,973.54478 Z M942.940854,963.694228 C940.618932,961.29279 937.740886,959.69052 934.559939,959.020645 C934.000194,958.902777 933.461152,959.302642 933.381836,959.8878 L933.343988,960.167112 C933.271069,960.705385 933.615682,961.208072 934.130397,961.317762 C936.868581,961.901546 939.347628,963.286122 941.347272,965.348626 C943.231864,967.297758 944.53673,969.7065 945.149595,972.360343 C945.27189,972.889813 945.766987,973.232554 946.285807,973.140969 L946.55074,973.094209 C947.119782,972.993697 947.484193,972.415781 947.350127,971.835056 C946.638568,968.753629 945.126778,965.960567 942.940854,963.694228 Z" transform="translate(-919 -959)"></path>
+                            </svg>
+                        </div>
+                        <div data-b24-crm-button-icon="openline" class="b24-widget-button-inner-item " style="">
+                            <svg class="b24-crm-button-icon b24-crm-button-icon-active" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 29">
+                                <path class="b24-crm-button-chat-icon" fill="#FFFFFF" fill-rule="evenodd" d="M878.289968,975.251189 L878.289968,964.83954 C878.289968,963.46238 876.904379,962 875.495172,962 L857.794796,962 C856.385491,962 855,963.46238 855,964.83954 L855,975.251189 C855,976.924031 856.385491,978.386204 857.794796,978.090729 L860.589592,978.090729 L860.589592,981.876783 L860.589592,983.76981 L861.521191,983.76981 C861.560963,983.76981 861.809636,982.719151 862.45279,982.823297 L866.179185,978.090729 L875.495172,978.090729 C876.904379,978.386204 878.289968,976.924031 878.289968,975.251189 Z M881.084764,971.465135 L881.084764,976.197702 C881.43316,978.604561 879.329051,980.755508 876.426771,980.93027 L868.042382,980.93027 L866.179185,982.823297 C866.400357,983.946455 867.522357,984.94992 868.973981,984.716324 L876.426771,984.716324 L879.221567,988.502377 C879.844559,988.400361 880.153166,989.448891 880.153166,989.448891 L881.084764,989.448891 L881.084764,987.555864 L881.084764,984.716324 L882.947962,984.716324 C884.517696,984.949819 885.742758,983.697082 885.742758,981.876783 L885.742758,974.304675 C885.742659,972.717669 884.517597,971.465135 882.947962,971.465135 L881.084764,971.465135 Z" transform="translate(-855 -962)"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="b24-widget-button-inner-item b24-widget-button-close">
+                        <svg class="b24-widget-button-icon b24-widget-button-close-item" xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
+                            <path fill="#FFF" fill-rule="evenodd" d="M18.866 14.45l9.58-9.582L24.03.448l-9.587 9.58L4.873.447.455 4.866l9.575 9.587-9.583 9.57 4.418 4.42 9.58-9.577 9.58 9.58 4.42-4.42">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / Callback widget -->
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

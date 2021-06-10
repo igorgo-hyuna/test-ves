@@ -86,6 +86,28 @@ $(document).ready(function() {
         }
     });
 
+    var owl = $('.carousel-two');
+    owl.owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 8000,
+        nav: true,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            960: {
+                items: 5
+            },
+            1200: {
+                items: 7
+            }
+        }
+    });
+
     //B24 widget
     var popup = document.querySelector('[data-b24-crm-button-cont]');
     var buttonBlock = document.querySelector('[data-b24-crm-button-block]');
@@ -121,4 +143,14 @@ $(document).ready(function() {
         bieuTuong[i1].classList.remove("b24-widget-button-icon-animation");
         bieuTuong[i2].classList.remove("b24-widget-button-icon-animation");
     }
+
+
+
+   var someTabTriggerEl = document.querySelector('#myTab')
+  var tab = new bootstrap.Tab(someTabTriggerEl)
+
+  tab.show()
+
+
+
 });
